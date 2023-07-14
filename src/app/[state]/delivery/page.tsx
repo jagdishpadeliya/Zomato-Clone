@@ -277,9 +277,9 @@ const DeliveryPage = () => {
                     <Slider range railStyle={{ backgroundColor: 'red' }} dotStyle={{ backgroundColor: "red" }}
                       trackStyle={[{ backgroundColor: 'red', height: '0.5rem' }]}
                       step={1}
-                      marks={[0, 100, 300, 500, 800, 'Any']}
+                      marks={{ a: [0, 100, 300, 500, 800, 'Any'] }}
                       value={cost}
-                      onChange={handleCostChange}
+                      onChange={() => handleCostChange}
                       min={0}
                       max={5}
                       defaultValue={[0, 5]}
